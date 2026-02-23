@@ -1,0 +1,11 @@
+apiVersion: webapp.example.com/v1
+kind: Website
+metadata:
+  labels:
+    app.kubernetes.io/name: k8s-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: my-site
+spec:
+  image: nginx:latest
+  replicas: 2
+  port: 80
